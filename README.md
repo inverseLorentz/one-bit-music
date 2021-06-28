@@ -14,6 +14,9 @@ Input is a text file, output is a raw mono unsigned 8-bit PCM file with a 44100 
 The input consists of lines of four space-separated numbers. Each line is called an event.
 
 The first number in an event dictates the type of sound. 0 means noise and 1 means a pulse wave.
+
 The second number dictates the lowness of the noise (minimum 1 for highest noise) or the MIDI note number of the pulse wave.
-The third number dictates if the event is a audible (1) or silent (0)
+
+The third number dictates if the event is audible (1) or silent (0).
+
 The fourth number dictates the length of the event in samples.
