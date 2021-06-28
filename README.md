@@ -1,5 +1,5 @@
 # one-bit-music
-Program to create one-bit music from text files (may sound strange on some speakers/headphones). Does not support duty cycles other than 50% yet.
+Program to create one-bit music from text files. Does not support duty cycles other than 50% yet.
 
 ## Use
 Run the python file `onebit.py` and then run
