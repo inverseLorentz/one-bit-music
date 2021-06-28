@@ -11,7 +11,7 @@ compile_text('/path/to/inputfile.txt', '/path/to/outputfile.pcm')
 Input is a text file, output is a raw mono unsigned 8-bit PCM file with a 44100 Hz sample rate. You can convert this into a WAV file using the FFmpeg command `ffmpeg -f u8 -ar 44100 -ac 1 -i input.file output.wav` or open it in Audacity by importing raw data and selecting "Unsigned 8-bit PCM" and "1 Channel (Mono)".
 
 ## Input format
-The input consists of lines of four space-separated numbers. Each line is called an event.
+The input consists of lines of four space-separated numbers. Each line is called an event. Newlines are ignored and lines can be commented out by using `#` or `//` at the start of the line.
 
 The first number in an event dictates the type of sound. 0 means noise and 1 means a pulse wave.
 
